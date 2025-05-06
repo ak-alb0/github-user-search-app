@@ -15,35 +15,6 @@
     --accent-color: #0079fe;
 }
 
-#theme-toggle {
-    display: none;
-}
-
-#theme-toggle:checked ~ * {
-    --bg-color: #f6f8ff;
-    --card-bg-color: #fefefe;
-    --stats-bg-color: #f6f8ff;
-    --text-color: #2b3442;
-    --text-secondary: #4b6a9b;
-    --shadow-color: rgba(70, 96, 187, 0.1);
-}
-
-#theme-toggle:checked ~ .container .theme-text::before {
-    content: "DARK ";
-}
-
-#theme-toggle:not(:checked) ~ .container .theme-text::before {
-    content: "LIGHT ";
-}
-
-#theme-toggle:checked ~ .container .sun-icon img {
-    content: url('002-moon.svg');
-}
-
-#theme-toggle:not(:checked) ~ .container .sun-icon img {
-    content: url('002-sun.svg');
-}
-
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -84,20 +55,9 @@ body {
     cursor: pointer;
 }
 
-.theme-text::before {
-    content: "LIGHT ";
-}
-
 .sun-icon {
     display: flex;
     align-items: center;
-}
-
-.sun-icon img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-    content: url('002-sun.svg');
 }
 
 .search-bar {
@@ -261,8 +221,4 @@ body {
 
 .contact-item a:hover {
     text-decoration: underline;
-}
-
-.not-available {
-    opacity: 0.6;
 }
